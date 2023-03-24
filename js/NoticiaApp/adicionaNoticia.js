@@ -2,7 +2,7 @@ import { Noticia } from "./Noticia.js";
 import { Noticias } from "./Noticias.js";
 
 let btnAdiconaNoticiaNaHome = document.getElementById('btnAdiconaNoticiaNaHome')
-const noticias = JSON.parse(localStorage.getItem('noticias')) || new Noticias()
+let noticias = new Noticias()
 console.log(noticias)
 
 btnAdiconaNoticiaNaHome.addEventListener('click', () => {
