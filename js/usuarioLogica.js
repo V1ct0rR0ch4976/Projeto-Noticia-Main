@@ -2,6 +2,7 @@ let sectionOpcoes = document.getElementById('options')
 let required2 = document.querySelectorAll('.required-2')
 let required3 = document.querySelectorAll('.required-3')
 let btnCriaNoticia = document.getElementById('btnCriaNoticia')
+let btnDeletaNoticiaElement = document.querySelectorAll('#btnDeletaNoticia')
 
 if(typeof item[0] == undefined || item[0].perfil == 0) {
     sectionOpcoes.innerHTML = ''
@@ -12,6 +13,10 @@ if(typeof item[0] == undefined || item[0].perfil == 0) {
     })
     required3.forEach(element => {
         element.innerHTML = ''
+    })
+    btnDeletaNoticiaElement.forEach(element => {
+        element.innerHTML = ''
+        element.classList.add('d-none')
     })
 } else if(item[0].perfil <= 2) {
     required3.forEach(element => {

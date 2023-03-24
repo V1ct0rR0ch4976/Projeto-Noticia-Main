@@ -9,6 +9,7 @@ noticiasLista.forEach((element) => {
                 <h5 class="card-title titulo-importante">${element._titulo[0].texto}</h5>
                 <p class="card-text" id="p-do-ngc-la">${element._subtitulo[0].texto}</p>
                 <a href="novaNoticia.html" class="btn btn-primary btn-card">Saiba mais!</a>
+                <button class="btn btn-primary btn-card required2" id="btnDeletaNoticia">Deletar notícia</button>
             </div>
         </div>
     `
