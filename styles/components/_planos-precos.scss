@@ -1,0 +1,79 @@
+$cor-basic: black;
+$cor-premium: cadetblue;
+$cor-gold: goldenrod;
+
+.planos-cadastro {
+    margin-left: 120px;
+    text-align: center;
+    h1 {
+        font-size: 35px;
+    }
+    .plano {
+        background-color: $cor-basic;
+        vertical-align: top;
+        border: 3px solid;
+        border-radius: 45px;
+        width: 350px;
+        height: 320px;
+        display: inline-block;
+        margin: 10px;
+        transition: 0.5s;
+        &:hover {
+            scale: 1.025;
+        }
+        .plano-nome {
+            color: white;
+        }
+        .plano-body {
+            .titulo-versao {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .digital, .fisico {
+                font-family: 'Raleway', sans-serif;
+                vertical-align: top;
+                background-color: white;
+                height: 80%;
+                display: inline-block;
+                width: 45%;
+                border-radius: 25px;
+                transition: 0.25s;
+                text-align: center;
+                &:hover {
+                    scale: 1.025;
+                }
+            }
+            .digital {
+                cursor: pointer;
+                margin-right: 10px;
+                .titulo-versao {
+                    margin-left: 15px;
+                }
+                .versao-body {
+                    padding-left: 6px;
+                    line-height: 18px;
+                }
+            }
+            .fisico {
+                cursor: pointer;
+                .titulo-versao {
+                    margin-right: 15px;
+                }
+                .versao-body {
+                    padding-right: 6px;
+                    padding-left: 0;
+                    line-height: 18px;
+                }
+
+            }
+        }
+    }
+    .premium {
+        background-color: $cor-premium;
+        border-color: $cor-premium;
+    }
+    .gold {
+        background-color: $cor-gold;
+        border-color: $cor-gold;
+    }
+}

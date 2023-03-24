@@ -1,0 +1,69 @@
+.btnRemover {
+    background-color: rgb(72, 120, 120);
+    color: white;
+    width: 90px;
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: normal;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.4s;
+    &:hover {
+        background-color: darkslategray;
+        scale: 1.05;
+    }
+}
+
+.cadastro-section{
+    display: none;
+}
+
+#lista {
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 3px solid darkslategray;
+    float: center;
+    margin-bottom: 0;
+    h1{
+        margin: 10px 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 640px) {
+    #lista {
+        text-align: right;
+        border-bottom: 3px solid darkslategray;
+        float: center;
+        h1{
+            padding: 10px 10px 10px 30px;
+            font-size: 17px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    #lista {
+        text-align: right;
+        border-bottom: 3px solid darkslategray;
+        float: center;
+        h1{
+            padding: 10px 10px 10px 30px;
+            font-size: 16px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

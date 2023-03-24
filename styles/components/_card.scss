@@ -1,0 +1,25 @@
+.card {
+    text-align: center;
+    .btn-card {
+        border: none;
+        margin-top: 10px;
+        background-color: darkslategray;
+        color: white;
+        transition: 0.2s;
+        &:hover {
+            background-color: rgb(3, 44, 33);
+            scale: 1.025;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .noticia-oculto {
+        .card {
+            display: none;
+            .btn-card {
+                display: none;
+            }
+        }
+    }
+}

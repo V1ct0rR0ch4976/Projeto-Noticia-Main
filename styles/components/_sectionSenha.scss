@@ -1,0 +1,34 @@
+.section-Senha {
+    align-items: center;
+    margin: 40px 60px;
+    padding: 50px;
+    padding-left: 60px;
+    margin-bottom: 0;
+    label {
+        font-size: 25px;
+    }
+    input {
+        margin-left: 90px;
+        margin-top: 15px;
+        display: block;
+        width: 40%;
+        height: 35px;
+    }
+    #submitSenha {
+        cursor: pointer;
+        background-color: darkcyan;
+        transition: 0.6s;
+        border: 2px solid lightseagreen;
+        border-radius: 8px;
+        margin-left: 90px;
+        margin-top: 15px;
+        display: block;
+        width: 40%;
+        height: 35px;
+        &:hover {
+            scale: 1.05;
+            background-color: darkslategray;
+            border-color: gray;
+        }
+    }
+}

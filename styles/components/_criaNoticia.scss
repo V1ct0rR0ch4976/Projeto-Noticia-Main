@@ -1,0 +1,60 @@
+.options-criaNoticia {
+    background-color: lightseagreen;
+    margin-left: 80px;
+    color: white;
+    .options-btn {
+        font-weight: 700;
+        transition: 0.25s;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+    .nav-item {
+        transition: 0.25s;
+        &:hover {
+            scale: 1.07;
+        }
+    }
+}
+.options-criaNoticia-oculto {
+    margin-left: 25%;
+}
+#secao-noticia {
+    text-align: center;
+    .textarea-adicionaTexto {
+        margin-top: 60px;
+        height: 85px;
+        width: 60%;
+        font-size: 50px;
+        border: 2px solid gray;
+        border-radius: 5px;
+    }
+    .btn-confirmaAdicao {
+        background-color: darkcyan;
+        border: none;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 5px 45px;
+        transition: 0.25s;
+        &:hover {
+            scale: 1.03;
+            background-color: darkslategray;
+            font-weight: bold;
+        }
+    }
+    .titulo-noticia {
+        max-width: 90%;
+        font-size: 4em;
+        color: black;
+        padding-left: 60px;
+        font-weight: bold;
+        transition: 0.4s;
+    }
+    .sub-title {
+        max-width: 70%;
+        font-size: 30px;
+    }
+    .noticia-texto {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,276 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <title>G3 - Globinho Notícias</title>
+            <link rel="stylesheet" href="styles/css/reset.css">
+            <link rel="stylesheet" href="styles/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>            
+            
+        </head>
+        <body>
+            <header class="navbar">
+                <div class="container-fluid">
+                    <h1 class="titulo-principal"><a class="navbar-brand" href="index.html">G3 - NOTÍCIAS</a></h1>
+                    <p class="data text-white" id="data"><div id="diaSemana">Seg</div><div id="diaHorario">13:00</div></p>
+                    <p class="page-atual justify-content-end d-flex">Cadastro</p> 
+                </div>
+            </header>
+            <main>
+                <div class="menu oculto">
+                    <section class="home"><span class="material-symbols-outlined" id="btnHome">Home</span></section>
+                    <a href="index.html"><div class="homePage">Home</div></a>
+                    <a href="esportes.html"><div class="settings">Esportes</div></a>
+                    <a href="meio-ambiente.html"><div class="loja">Meio Ambiente</div></a>
+                    <a href="economia.html"><div class="localizacao">Economia</div></a>
+                    <a href="tecnologia.html"><div class="tecnologyPage">Tecnologia</div></a>
+                    <a href="cadastro.html"><div class="cadastroPage">Cadastro</div></a>
+                    <div id="areaJogo"></div>
+                </div>
+                <ul id="lista">
+                    <h1>Você ainda não assinou nosso Jornal. Vamos assinar agora?</h1>
+                    <li id="li"> 
+                    </li>
+                    <button class="btnRemover d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Remover Conta</button>
+                </ul>
+                <section class="noticias">
+                    <section class="noticia-fome cadastro-section">
+                    </section>   
+                    <section class="noticia-mumia cadastro-section">
+                    </section>   
+                    <section class="noticia-mumia cadastro-section">
+                    </section>
+                </section>
+                <div class="principal">
+                    <section class="planos-cadastro">
+                        <h1>Qual plano você irá usar?</h1>
+                        <div class="plano basic">
+                            <h1 class="plano-nome">Basic</h1>
+                            <div class="plano-body">
+                                <section class="digital">
+                                    <h1 class="titulo-versao">Versão Digital</h1>
+                                    <ul class="versao-body">
+                                        <li> - Jornal informativo que pode ser acessado pelo WIFI</li>
+                                        <li> - Habilidade de ver edições anteriores a qualquer momento</li>
+                                    </ul>
+                                    <h1 class="titulo-versao preco">R$12,99</h1>
+                                </section>
+                                <section class="fisico">
+                                    <h1 class="titulo-versao">Versão Física</h1>
+                                    <ul class="versao-body">
+                                        <li> - Jornal informativo em papel jornal comum</li>
+                                        <li> - Primeira edição entregue com um marca página especial</li>
+                                    </ul>
+                                    <h1 class="titulo-versao preco">R$15,99</h1>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="plano premium">
+                            <h1 class="plano-nome">Premium</h1>
+                            <div class="plano-body">
+                                <section class="digital">
+                                    <h1 class="titulo-versao">Versão Digital</h1>
+                                    <ul class="versao-body">
+                                        <li> - Jornal informativo que pode ser acessado pelo WIFI e pela nuvem</li>
+                                        <li> - Habilidade de ver edições anteriores a qualquer momento</li>
+                                        <li> - Edições limitadas somente para premiuns</li>
+                                    </ul>
+                                    <h1 class="titulo-versao preco">R$17,99</h1>
+                                </section>
+                                <section class="fisico">
+                                    <h1 class="titulo-versao">Versão Física</h1>
+                                    <ul class="versao-body">
+                                        <li> - Jornal informativo em papel jornal premium</li>
+                                        <li> - Primeira edição entregue com um marca página especial</li>
+                                        <li> - Edições limitadas somente para premiuns</li>
+                                    </ul>
+                                    <h1 class="titulo-versao preco">R$20,99</h1>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="plano gold">
+                            <h1 class="plano-nome">Gold</h1>
+                            <div class="plano-body">
+                                <section class="digital">
+                                    <h1 class="titulo-versao">Versão Digital</h1>
+                                    <ul class="versao-body">
+                                        <li> - Jornal informativo que pode ser acessado por qualquer dipositvo, onde estiver</li>
+                                        <li> - Habilidade de ver edições anteriores</li>
+                                        <li> - Edições limitadas somente para premiuns</li>
+                                    </ul>
+                                    <h1 class="titulo-versao preco">R$23,99</h1>
+                                </section>
+                                <section class="fisico">
+                                    <h1 class="titulo-versao">Versão Física</h1>
+                                    <ul class="versao-body">
+                                        <li> - Jornal informativo em papel jornal UltraGold</li>
+                                        <li> - Primeiras 10 ediçoes após renovação com ticket dourado</li>
+                                        <li> - Edições limitadas somente para premiuns</li>
+                                    </ul>
+                                    <h1 class="titulo-versao preco">R$28,99</h1>
+                                </section>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <section class="section-Senha">
+                        <div class="alert alert-danger d-none alerta-preenche-senha" role="alert">
+                            Preencha o campo antes de prosseguir
+                        </div>
+                        <div class="alert alert-danger d-none alerta-senha-invalida" role="alert">
+                            Senha iválida!
+                        </div>
+                        <label for="senha">Você é um funcionário? Entre na sua conta com a sua senha!</label>
+                        <!-- Senha REDATOR: 23h474F -->
+                        <!-- Senha ADMINISTRADOR DO SITE: dB783o4 -->
+                        <!-- Senha ADMINISTRADOR GERAL: pI28fY3 -->
+                        <input type="text" placeholder="Senha" id="senha-funcionario">
+                        <button class="text-white" id="submitSenha">Enviar senha</button>
+                    </section>
+                    <form action="" class="adicionar classeDoForm" id="idDoForm">
+                        <div class="alert alert-danger d-none alerta-escolha-plano" role="alert">
+                            Escolha um plano antes de continuar!
+                        </div>
+                        <div class="alert alert-danger d-none alerta-preenche-campo" role="alert">
+                            Preencha todos os campos para prosseguir!
+                        </div>
+                        <label for="item">Nome</label>
+                        <input class="input" type="text" name="nome" id="nome" placeholder="Seu Nome Completo" required>
+                        <label for="item">Número de Celular</label>
+                        <input class="input" type="number" name="numeroCel" id="numeroCel" placeholder="(XX)XXXXX-XXXX" required>
+                        <label for="item">Número do cartão</label>
+                        <input class="input" type="password" type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX-XXXX-XXXX" required>
+                        <fieldset class="fieldset">
+                            <legend>Qual o espaço de tempo que você prefere receber os seus jornais?</legend>
+                            <select id="select">
+                                <option>Diariamente</option>
+                                <option>Semanalmente</option>
+                                <option>Mensalmente</option>
+                            </select>
+                        </fieldset>
+                        <h1 class="valor-pago ml-5 my-4"></h1>
+                        <div class="cep-campo">
+                            <label for="cep">CEP</label>
+                            <input class="input" type="number" name="cep" id="cep" required placeholder="XXXXXXXX">
+                            <div id="erro"></div>
+                        </div>
+                        <div class="endereco">
+                            <div class="cep-campo" id="endereco-field">
+                                <label for="endereco">Endereço</label>
+                                <input class="input" name="endereco" id="endereco" required placeholder="Nome da rua">
+                            </div>
+                            <div class="cep-campo" id="endereco-field">
+                                <label for="numero">Numero</label>
+                                <input class="input" name="numero" id="numero" required placeholder="XXX">
+                            </div>
+                        </div>
+                        <div class="cep-campo">
+                            <label for="bairro">Bairro</label>
+                            <input class="input" name="bairro" id="bairro" required placeholder="Nome do bairro">
+                        </div>
+                        <div class="formulario__dupla">
+                            <div class="cep-campo">
+                                <label for="cidade">Cidade</label>
+                                <input class="input" name="cidade" id="cidade" required placeholder="Sua cidade">
+                            </div>
+                            <fieldset class="cep-campo fieldset">
+                                <legend for="estado">UF</legend>
+                                <select id="estado" name="estado">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <input type="submit" value="Adicionar" class="cadastrar" id="adiciona">
+                    </form>
+                </div>
+            </main>
+            <footer class="titulo-footer">
+                <h1 class="titulo-principal"><a href="#header">CADASTRO</a></h1>
+            </footer>
+            
+            <!-- Modal REMOVER-->
+            <div class="modal fade modal-remover" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Excluir conta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Você está excluindo sua conta! Você tem certeza?</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btnAccountRemove" data-bs-dismiss="modal">Remover</button>
+                    </div>
+                </div>
+                </div>
+            </div> 
+            
+            <!-- Modal SUBSTITUI -->
+            <div class="modal fade modal-substituir" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Substituir conta</h1>
+                        <button type="button" class="btn-close btnClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Você não pode ter mais de uma conta! Iremos deletar a sua conta atual e substituí-la pela nova! Você concorda?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btnClose" data-bs-dismiss="modal">Não</button>
+                        <button type="button" class="btn btn-primary btn-concordo">Sim</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <script src="js/cep.js"></script>
+            <script src="js/preco.js"></script>
+            <script src="js/menu.js"></script>
+            <script src="js/cadastro.js"></script>
+            <script src="js/data.js"></script>
+            <script src="js/usuarioLogica.js"></script>
+            <script src="js/mostraJogo.js"></script>
+        </body>
+    </html>   

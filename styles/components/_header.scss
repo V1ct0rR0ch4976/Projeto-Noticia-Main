@@ -1,0 +1,109 @@
+header {
+    background-color: darkslategray;
+    display: inline;
+    .container-fluid {
+        display: inline-block;
+    }
+    .titulo-principal {
+        font-size: 4.5rem;
+        color: darkcyan;
+        padding: 20px;
+        margin-left: 20px;
+        padding-left: 100px;
+        transition: 0.4s;
+        a {
+            font-size: 4.5rem;
+            text-decoration: none;
+            color: darkcyan;
+            transition: 0.4s;
+            &:hover {
+                scale: 1.05;
+                color: white;
+            }
+        }
+    }
+
+    .page-atual {
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 10px;
+        margin-bottom: 0;
+        display: inline;
+        justify-content: end;
+    
+    }
+    
+    .titulo-principal-oculto {
+        margin: 0 0 0 25%;
+        transition: 0.4s;
+    }
+
+}
+
+@media (max-width: 640px) {
+    header {
+        background-color: darkslategray;
+        width: 100%;
+        .titulo-principal {
+            font-size: 3em;
+            color: darkcyan;
+            padding: 10px;
+            margin-left: 10px;
+            padding-left: 20%;
+            transition: 0.4s;
+            a {
+                font-size: inherit;
+                text-decoration: none;
+                color: darkcyan;
+                transition: 0.4s;
+                &:hover {
+                    scale: 1.025;
+                    color: white;
+                }
+            }
+        }
+        
+        .titulo-principal-oculto {
+            margin: 0 0 0 7vw;
+            transition: 0.4s;
+        }
+        
+        .page-atual {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+            margin-left: 40vh;
+            margin-bottom: 0;
+            justify-content: end;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        width: 100%;
+        .titulo-principal {
+            font-size: 2.5rem;
+        }
+        .titulo-principal-oculto {
+            margin: 0;
+        }
+        .page-atual {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+            box-sizing: border-box;
+            margin-left: 20vw;
+            margin-bottom: 0;
+        
+        }
+    }
+}
+

@@ -1,0 +1,71 @@
+.btn-comenta {
+    margin-left: 300px;
+}
+.titulo-noticia {
+    width: 50%;
+    font-size: 4em;
+    color: black;
+    padding: 20px;
+    margin: 30px auto;
+    padding-left: 0px;
+    font-weight: bold;
+    transition: 0.4s;
+    text-align: center;
+}
+.sub-title {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.img-noticia {
+    width: 80%;
+    margin: 20px 100px;
+    opacity: 0.8;
+}
+.menor {
+    width: 50%;
+}
+.noticia-texto {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    p {
+        margin: 10px 0;
+    }
+}
+.linkFuvest {
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .titulo-noticia {
+        width: 90%;
+        font-size: 2em;
+        color: black;
+        margin: 10px auto;
+        padding-left: 60px;
+        font-weight: bold;
+        transition: 0.4s;
+        text-align: center;
+    }
+    .sub-title {
+        width: 70%;
+        margin: 10px 90px;
+        font-size: 20px;
+    }
+    .menor {
+        width: 50%;
+    }
+    .noticia-texto {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 16px;
+        margin-left: 90px;
+        p {
+            margin: 10px 0;
+        }
+    }
+    .linkFuvest {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    background-color: brown;
+}
+.titulo-principal {
+    margin-top: 100px;
+    font-size: 100px;
+    color: goldenrod;
+}
+.texto-principal {
+    font-size: 30px;
+    color: yellow;
+}
+h2 {
+    font-size: 100px;
+    margin-top: 250px;
+    color: goldenrod;
+}
+h3 {
+    font-size: 40px;
+    color: aliceblue;
+}
+.numero-chute {
+    font-size: 6em;
+    color: aliceblue;
+    display: inline-block;
+    border: 2px solid goldenrod;
+    margin: 30px;
+    padding: 0 30px;
+}
+
+.btn-jogar {
+    margin-top: 30px;
+    padding: 10px;
+    width: 20%;
+    font-size: 20px;
+    background-color: gold;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-jogar:hover {
+    scale: 1.1;
+    background-color: goldenrod;
+}

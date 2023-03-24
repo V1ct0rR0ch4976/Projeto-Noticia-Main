@@ -1,0 +1,47 @@
+.erro-comentario {
+    width: 70%;
+    margin:30px 0;
+    margin-left: 225px;
+}
+
+.secao-comentario {
+    margin: 40px 0;
+    justify-content: center;
+    display: block;
+    .newComentarioDiv {
+        margin-left: 250px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .nomeNoComentario {
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .novo-comentario {
+            border: 2px solid lightblue;
+            border-radius: 25px;
+            width: 65%;
+            padding: 10px;
+        }
+    }
+    .comentario {
+        margin: 10px 0;
+        margin-left: 250px;
+        width: 60%;
+    }
+    .btn-comenta {
+        border: none;
+        border-radius: 25px;
+        padding: 10px 0;
+        width: 25%;
+        background-color: darkcyan;
+        color: white;
+        margin: 20px 30px;
+        margin-left: 280px;
+        transition: 0.25s;
+        &:hover {
+            scale: 1.025;
+            background-color: darkslategray;
+        }
+    }
+}

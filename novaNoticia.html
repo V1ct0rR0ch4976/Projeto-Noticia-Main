@@ -1,0 +1,161 @@
+<DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>G3 - Globinho Notícias</title>
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>                    
+    </head>
+    <header class="navbar">
+        <div class="container-fluid">
+            <h1 class="titulo-principal"><a class="navbar-brand" href="index.html">G3 - NOTÍCIAS</a></h1>
+            <p class="data text-white" id="data"><div id="diaSemana">Seg</div><div id="diaHorario">13:00</div></p>
+            <p class="page-atual justify-content-end d-flex">Notícia</p> 
+        </div>
+    </header>
+    <main>
+      <div class="menu oculto">
+        <section class="home"><span class="material-symbols-outlined" id="btnHome">Home</span></section>
+        <a href="index.html"><div class="homePage">Home</div></a>
+        <a href="esportes.html"><div class="settings">Esportes</div></a>
+        <a href="meio-ambiente.html"><div class="loja">Meio Ambiente</div></a>
+        <a href="economia.html"><div class="localizacao">Economia</div></a>
+        <a href="tecnologia.html"><div class="tecnologyPage">Tecnologia</div></a>
+        <a href="cadastro.html"><div class="cadastroPage">Cadastro</div></a>
+        <div id="areaJogo"></div>
+    </div>
+
+        <div class="imagem-banner" id="imagem-banner"></div>
+        <section class="noticias" id="noticias"></section>
+
+        <section id="options">
+            <nav class="navbar navbar-expand-lg options-criaNoticia">
+                <div class="container-fluid">
+                  <a class="navbar-brand options-btn" href="#">Opções</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <li class="nav-item dropdown">
+                          <button class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            Adicionar/Editar Texto
+                          </button>
+                          <ul class="dropdown-menu" id="dropdown-adiciona-texto">
+                            <li><a class="dropdown-item" id="adiciona-titulo" href="#">Adicionar título</a></li>
+                            <li><a class="dropdown-item" id="adiciona-subtitulo" href="#">Adicionar subtítulo</a></li>
+                            <li><a class="dropdown-item" id="adiciona-texto" href="#">Adicionar texto</a></li>
+                          </ul>
+                        </li>
+                      </li>
+                      <li class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <li class="nav-item dropdown">
+                          <button class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            Estilizar
+                          </button>
+                          <ul class="dropdown-menu" id="dropdown-adiciona-texto">
+                            <li><a class="dropdown-item" id="btnMostraCores" href="#">Cor do background</a></li>
+                            <li><a class="dropdown-item" id="" href="#">Estilo da fonte</a></li>
+                            <li><a class="dropdown-item" id="" href="#">Voltar ao original</a></li>
+                          </ul>
+                        </li>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalAdicionaImagem">Adicionar Imagem</a>
+                      </li>
+                      <li class="nav-item required-2">
+                        <a class="nav-link text-white" href="#">Meta Tags</a>
+                      </li>
+                      <li class="nav-item required-2">
+                        <a class="nav-link text-white" href="#">Descrição</a>
+                      </li>
+                      <li class="nav-item required-3">
+                        <a class="nav-link text-white" href="#">Controle de visualização</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <section id="secao-cores" class="d-none">
+          <div class="botao-background">
+            <p class="botao-aparece">Plano de fundo </p><span class="material-symbols-outlined setinha-cores">navigate_next</span>
+            <section class="cores">
+                <div class="cor d-none vermelho "></div>
+                <div class="cor d-none azul"></div>
+                <div class="cor d-none amarelo"></div>
+                <div class="cor d-none verde"></div>
+                <div class="cor d-none preto"></div>
+            </section>
+          </div>
+        </section>
+        <section id="secao-noticia">
+            <div id="data-salvamento" class="mt-5"></div>
+            <div id="div-adiciona-titulo"></div>
+            <div id="div-adiciona-subtitulo"></div>
+            <div id="div-adiciona-img"></div> 
+            <div id="div-adiciona-texto"></div>
+            <button type="button" class="btn btn-primary m-4" id="btnSalvar">Salvar</button>
+            <button type="button" class="btn btn-secondary m-4" id="btnAdiconaNoticiaNaHome">Adicionar Notícia</button>
+        </section>
+    </main>
+    <footer class="titulo-footer">
+        <h1 class="titulo-principal" >NOTÍCIAS</h1>
+    </footer>
+      <!-- Modal ADICIONA IMAGEM -->
+      <div class="modal fade" id="modalAdicionaImagem" tabindex="-1" aria-labelledby="modalAdicionaImagemLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalAdicionaImagemLabel">Adicionar imagem</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="alert alert-danger d-none alerta-preenche-url" role="alert">
+                Preencha o campo antes de prosseguir
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">URL da imagem</label>
+                <input type="email" class="form-control" id="campo-Url-img" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Coloque a URL da imagem para implementa-la no site</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Alt da imagem</label>
+                <input type="email" class="form-control" id="campo-Alt-img" aria-describedby="Alt-label">
+                <div id="Alt-label" class="form-text">Coloque a Alt da imagem</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary" id="btn-adiciona-img">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/usuarioLogica.js"></script>
+    <script src="js/NoticiaApp/adicionaTexto.js"></script>
+    <script src="js/NoticiaApp/salvaNoticia.js"></script>
+    <script src="js/NoticiaApp/mostraConfig.js"></script>
+    <script src="js/NoticiaApp/adicionaImg.js"></script>
+    <script src="js/mostraJogo.js"></script>
+    <script type="module" src="js/NoticiaApp/adicionaNoticia.js"></script>
+</html>

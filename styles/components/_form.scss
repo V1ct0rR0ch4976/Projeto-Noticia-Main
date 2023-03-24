@@ -1,0 +1,83 @@
+.classeDoForm {
+    margin: 40px 60px;
+    padding: 50px;
+    padding-left: 60px;
+    margin-top: 0;
+    input {
+        display: block;
+        width: 40%;
+        height: 35px;
+        margin: 10px 0;
+    }
+    label {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    #select {
+        display: block;
+        margin: 10px;
+        width: 25%;
+        height: 5%;
+        border-radius: 5px;
+    }
+    .endereco {
+        width: 70%;
+        display: block;
+        #endereco-field {
+            width: 30%;
+            input, label {
+                display: block;
+                padding-right: 50px;
+                width: 100%;
+            }
+        }
+    }
+    #adiciona {
+        cursor: pointer;
+        background-color: darkcyan;
+        transition: 0.6s;
+        border: 2px solid lightseagreen;
+        border-radius: 8px;
+        &:hover {
+            scale: 1.05;
+            background-color: darkslategray;
+            border-color: gray;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    #idDoForm {
+        margin: 20px 30px;
+        padding: 30px;
+        padding-left: 60px;
+        input {
+            display: block;
+            width: 120%;
+            height: 35px;
+            margin: 30px 0;
+        }
+        label {
+            margin-left: 10px;
+            font-size: 25px;
+        }
+        #select {
+            margin: 10px;
+            width: 120%;
+            height: 5%;
+            border-radius: 5px;
+        }
+        #adiciona {
+            cursor: pointer;
+            background-color: darkcyan;
+            transition: 0.6s;
+            border: 2px solid lightseagreen;
+            border-radius: 8px;
+            &:hover {
+                scale: 1.05;
+                background-color: darkslategray;
+                border-color: gray;
+            }
+        }
+    }
+}
