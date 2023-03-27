@@ -31,7 +31,8 @@ form.addEventListener("submit", (event) => {
     const selecionado = document.querySelector('.selecionado');
     const itemAtual = {
         "nome": nome.value,
-        "perfil": perfil
+        "perfil": perfil,
+        "plano": plano
     }
     if(!selecionado) {
       alertaPlano.classList.remove('d-none')
